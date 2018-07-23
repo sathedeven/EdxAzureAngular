@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace EdxAzureAngular
-{
+{//
     public class Startup
     {
         public Startup(IConfiguration configuration)
