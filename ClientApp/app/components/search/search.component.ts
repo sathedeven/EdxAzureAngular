@@ -8,7 +8,7 @@ import { ImageResult } from '../common/models/bingSearchResponse';
     styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
-    searchResults!: ImageResult[] | null;
+    searchResults: ImageResult[] | null;
     isSearching = false;
     constructor(private cognitiveService: CognitiveService) { }
 

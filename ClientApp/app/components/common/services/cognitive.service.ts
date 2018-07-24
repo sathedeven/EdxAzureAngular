@@ -12,7 +12,7 @@ export class CognitiveService{
     constructor(private http: AzureHttpClient) { }
 
     searchImages(searchTerm: string): Observable<BingSearchResponse> {
-        return this.http.get('https://api.cognitive.microsoft.com/bing/v5.0/images/search?q=${searchTerm}', this.bingSearchAPIKey)
+        return this.http.get('https://api.cognitive.microsoft.com/bing/v7.0/images/search?q=${searchTerm}', this.bingSearchAPIKey)
             .map(response => response.json() as BingSearchResponse)
             .catch(this.handleError);
     }
